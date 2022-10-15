@@ -9,7 +9,7 @@ In this exercise, we build a Docker image with a web application, run it, and te
         `docker images`
  4. Launch a container from image. We expose the port from the container to local port 49160:
 	 `docker run -p 49160:8080 -d node-web-app`
- 5. Now check the service you just created by opening http://<ip or hostname of your Docker host>:49160 in a browser.
+ 5. Now check the service you just created by opening http://hostname:49160 in a browser.
  6. Check that the container is running and get the id:
 	 `docker ps -a`
  7. Enter the container: 

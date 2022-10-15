@@ -14,8 +14,8 @@ This deployment can be done locally or in the cloud.
 	 `docker ps -a`
  3. Display informations from a running container, e.g., *wordpress_mysql_pma-wordpress-1:*
 	 `docker inspect wordpress_mysql_pma-wordpress-1`
- 4. To do the wordpress setup, browse through [http://<ip of host>](http://<ip of host>) in a webbrowser
- 5. To access the MySQL db with phpMyAdmin open [http://<ip of host>:8080](http://<ip of host>:8080)
+ 4. To do the wordpress setup, browse through [http://hostname](http://hostname) in a webbrowser
+ 5. To access the MySQL db with phpMyAdmin open [http://hostname:8080](http://hostname:8080)
  6. Shutdown and delete the containers: 
 	 `docker-compose down`
  7. Display volumes stored on host:
