@@ -1,2 +1,3 @@
-# cloud-computing-technologies
-Files to support the excercises
+# Cloud Computing Technologies
+
+In the folders you will find files to support you on the excercises.
