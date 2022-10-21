@@ -27,7 +27,8 @@ In this exercise, we will build a Docker image with a web application, run it, a
 	 `docker rmi page-hit-counter-alpine`
 
 References: 
- - https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+ - https://flask.palletsprojects.com/en/2.2.x/
+ - https://www.kirilv.com/canvas-confetti/
  - https://www.docker.com/
  - https://hub.docker.com
  - https://alpinelinux.org/
