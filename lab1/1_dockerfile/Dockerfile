@@ -1,20 +1,17 @@
-# https://hub.docker.com/_/node
-FROM node:18
+# https://hub.docker.com/_/python
+FROM python:3.9
 
-# Create app directory
-WORKDIR /usr/src/app
+# create app directory
+WORKDIR /code
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
-
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
-
-# Bundle app source
+# bundle app source
 COPY . .
 
-EXPOSE 8080
-CMD [ "node", "server.js" ]
+# install required packages
+RUN pip install -r requirements.txt
+
+# our application will listen on port 5000 inside the container
+EXPOSE 5000
+
+# run the application
+CMD ["python", "app.py"]
