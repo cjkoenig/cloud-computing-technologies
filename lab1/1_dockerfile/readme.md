@@ -17,7 +17,7 @@ In this exercise, we will build a Docker image with a web application, run it, a
  8. Stop the container: 
 	 `docker stop <container id>`
   9. Now have a look to the steps in Dockerfile-alpine and build a further image `page-hit-counter-alpine` with Alpine Linux as base image:
-         `docker build -f Dockerfile-alpine -tpage-hit-counter-alpine .`
+         `docker build -f Dockerfile-alpine -t page-hit-counter-alpine .`
  10. Check that image is like the one with the python3 base image by starting a container and browsing to the index page.
  11. Compare the sizes of both images. Can you give a reason? (Hint: you need the history of the images...)
  12. Remove the containers: 
