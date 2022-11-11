@@ -1,0 +1,1 @@
+For deploying a VM in Microsoft Azure, have a look [here](https://learn.microsoft.com/en-us/azure/developer/terraform/).
